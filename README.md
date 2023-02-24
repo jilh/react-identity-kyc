@@ -18,14 +18,14 @@ import useIdentityPayKYC from 'react-identity-kyc'
 
 const App = () => {
   const config = {
-    first_name:"test",
-    last_name:"test",
-    email:"kayode@myidentitypass.com",
-    merchant_key:"",
-    user_ref:"a unique ref for your user",
-    is_test:false,  //set this to through for a test
-    config_id:"<configuration ID retrieve from your widget settings", //optional
-    callback:(response)=>console.log(response)
+    first_name: "test",
+    last_name: "test",
+    email: "kayode@myidentitypass.com",
+    merchant_key: "",
+    user_ref: "a unique ref for your user",
+    is_test: false,  //set this to true for a test
+    config_id: "<configuration ID retrieve from your widget settings", //optional
+    callback: (response)=>console.log(response)
   }
   const verifyWithIdentity = useIdentityPayKYC(config)
 
